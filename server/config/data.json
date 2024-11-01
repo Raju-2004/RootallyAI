@@ -1,0 +1,231 @@
+{
+  "categories": [
+    {
+      "id": "lower-body",
+      "name": "Lower Body",
+      "description": "Exercises targeting legs, hips, and lower back"
+    },
+    {
+      "id": "upper-body",
+      "name": "Upper Body",
+      "description": "Exercises targeting arms, shoulders, and chest"
+    },
+    {
+      "id": "core",
+      "name": "Core",
+      "description": "Exercises targeting abdominal and trunk muscles"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "knee-bends",
+      "categoryId": "lower-body",
+      "name": "Knee Bends",
+      "description": "Controlled knee bending exercise",
+      "defaultSets": 3,
+      "defaultReps": 10,
+      "defaultHoldTime": 0,
+      "requiresSide": true
+    },
+    {
+      "id": "calf-raises",
+      "categoryId": "lower-body",
+      "name": "Calf Raises",
+      "description": "Standing calf strengthening exercise",
+      "defaultSets": 3,
+      "defaultReps": 15,
+      "defaultHoldTime": 0,
+      "requiresSide": true
+    },
+    {
+      "id": "squats",
+      "categoryId": "lower-body",
+      "name": "Squats",
+      "description": "Basic squatting exercise",
+      "defaultSets": 3,
+      "defaultReps": 10,
+      "defaultHoldTime": 0,
+      "requiresSide": false
+    },
+    {
+      "id": "lunges",
+      "categoryId": "lower-body",
+      "name": "Lunges",
+      "description": "Forward stepping lunge movement",
+      "defaultSets": 3,
+      "defaultReps": 10,
+      "defaultHoldTime": 0,
+      "requiresSide": true
+    },
+    {
+      "id": "shoulder-press",
+      "categoryId": "upper-body",
+      "name": "Shoulder Press",
+      "description": "Overhead pressing movement",
+      "defaultSets": 3,
+      "defaultReps": 12,
+      "defaultHoldTime": 0,
+      "requiresSide": true
+    },
+    {
+      "id": "rotator-cuff",
+      "categoryId": "upper-body",
+      "name": "Rotator Cuff",
+      "description": "Shoulder rotator cuff strengthening exercise",
+      "defaultSets": 3,
+      "defaultReps": 15,
+      "defaultHoldTime": 0,
+      "requiresSide": true
+    },
+    {
+      "id": "bicep-curls",
+      "categoryId": "upper-body",
+      "name": "Bicep Curls",
+      "description": "Arm curling exercise for bicep strength",
+      "defaultSets": 3,
+      "defaultReps": 12,
+      "defaultHoldTime": 0,
+      "requiresSide": true
+    },
+    {
+      "id": "planks",
+      "categoryId": "core",
+      "name": "Planks",
+      "description": "Static core strengthening exercise",
+      "defaultSets": 3,
+      "defaultReps": 1,
+      "defaultHoldTime": 30,
+      "requiresSide": false
+    },
+    {
+      "id": "bridges",
+      "categoryId": "core",
+      "name": "Bridges",
+      "description": "Hip lifting exercise for core stability",
+      "defaultSets": 3,
+      "defaultReps": 10,
+      "defaultHoldTime": 5,
+      "requiresSide": false
+    },
+    {
+      "id": "ab-crunches",
+      "categoryId": "core",
+      "name": "Ab Crunches",
+      "description": "Basic abdominal strengthening exercise",
+      "defaultSets": 3,
+      "defaultReps": 15,
+      "defaultHoldTime": 0,
+      "requiresSide": false
+    }
+  ],
+  "combos": [
+    {
+      "id": "upper-body-combo-1",
+      "name": "Upper Body Strength Combo",
+      "description": "Basic upper body exercise combination",
+      "createdAt": "2024-11-01T10:00:00Z",
+      "exercises": [
+        {
+          "exerciseId": "shoulder-press",
+          "sets": 3,
+          "reps": 12,
+          "holdTime": 0,
+          "side": "right",
+          "order": 1,
+          "notes": "Control the movement"
+        },
+        {
+          "exerciseId": "shoulder-press",
+          "sets": 3,
+          "reps": 12,
+          "holdTime": 0,
+          "side": "left",
+          "order": 2,
+          "notes": "Match right side performance"
+        }
+      ]
+    }
+  ],
+  "programs": [
+    {
+      "id": "123",
+      "name": "Lower Body Strength",
+      "description": "Basic lower body strength program",
+      "createdAt": "2024-11-01T10:00:00Z",
+      "exercises": [
+        {
+          "exerciseId": "squats",
+          "sets": 3,
+          "reps": 10,
+          "holdTime": 0,
+          "side": null,
+          "order": 1,
+          "notes": "Focus on form"
+        }
+      ],
+      "frequency": {
+        "daysPerWeek": [
+          "MON",
+          "WED",
+          "FRI"
+        ],
+        "sessionsPerDay": 1
+      },
+      "therapistNotes": "Start with body weight only"
+    },
+    {
+      "id": "1730457122180",
+      "createdAt": "2024-11-01T10:32:02.180Z",
+      "name": "Full body workout",
+      "description": "This is the full body Workout",
+      "exercises": [
+        {
+          "exerciseId": "knee-bends",
+          "sets": 3,
+          "reps": 10,
+          "holdTime": 0,
+          "side": "left",
+          "order": 1,
+          "notes": ""
+        },
+        {
+          "exerciseId": "shoulder-press",
+          "sets": 3,
+          "reps": 12,
+          "holdTime": 0,
+          "side": "left",
+          "order": 2,
+          "notes": "Match right side performance"
+        },
+        {
+          "exerciseId": "shoulder-press",
+          "sets": 3,
+          "reps": 12,
+          "holdTime": 0,
+          "side": "right",
+          "order": 3,
+          "notes": "Control the movement"
+        },
+        {
+          "exerciseId": "ab-crunches",
+          "sets": 3,
+          "reps": 15,
+          "holdTime": 0,
+          "side": null,
+          "order": 4,
+          "notes": ""
+        }
+      ],
+      "frequency": {
+        "daysPerWeek": [
+          "MON",
+          "WED",
+          "FRI",
+          "SUN"
+        ],
+        "sessionsPerDay": 2
+      },
+      "therapistNotes": "This full body program consists of the uppper , lower , core workout having two sessions per day and four day per week"
+    }
+  ]
+}
